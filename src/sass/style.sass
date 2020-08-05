@@ -1,0 +1,63 @@
+@import "../../node_modules/normalize.css/normalize.css"
+@import "fonts"
+
+*
+  outline: none
+ul
+  margin: 0
+  padding-left: 0
+  li
+    list-style: none
+.container
+  margin: 0 auto
+  @media(min-width: 320px)
+    max-width: 310px
+  @media(min-width: 565px)
+    max-width: 530px
+  @media(min-width: 768px)
+    max-width: 730px
+  @media(min-width: 992px)
+    max-width: 960px
+  @media(min-width: 1200px)
+    max-width: 1170px
+body
+  font-family: 'Lato' , sans-serif
+  font-weight: 400
+  color: #2a2b30
+.mobile-display-none
+  @media(max-width: 767px)
+    display: none !important
+.desktop-display-none
+  @media(min-width: 768px)
+    display: none !important
+.header-text
+  font-size: 36px
+  font-weight: 900
+  text-transform: uppercase
+  color: #ffffff
+  text-align: center
+  margin-bottom: 28px
+  @media(max-width: 767px)
+    font-size: 24px
+.subheader-text
+  font-size: 18px
+  text-align: center
+  margin-bottom: 77px
+  color: #bbbbbb
+  @media(max-width: 767px)
+    font-size: 14px
+    margin-bottom: 30px
+.btn
+  min-width: 183px
+  height: 42px
+  background-color: #3e9cdc
+  font-size: 13px
+  color: #ffffff
+  text-transform: uppercase
+  border: 1px solid #ffffff
+  border-radius: 4px
+  cursor: pointer
+  &_white
+    color: #2a2b30
+    border: 1px solid #2a2b30
+    background-color: #ffffff

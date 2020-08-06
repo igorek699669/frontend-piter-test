@@ -47,4 +47,22 @@ $(document).ready(function () {
         prevArrow: '.offer-slider-buttons-wrapper__button.left.all-offers',
         nextArrow: '.offer-slider-buttons-wrapper__button.right.all-offers',
     });
+
+
+    const PADDING_FOR_LABEL = 24;
+    $('.input input').on('focus' , function () {
+        let labelWidth = $(this).closest('.input').find('label').width();
+        let borderRightWidth = $(this).closest('.input').find('.top-border-right').width();
+        let newBorderWidth = borderRightWidth - labelWidth - PADDING_FOR_LABEL;
+        if(!$(this).closest('.input').hasClass('active')){
+            $(this).closest('.input').addClass('active');
+            $(this).closest('.input').find('.top-border-right').width(newBorderWidth);
+        }
+    });
+    $('.input input').on('focusout' , function () {
+        if(!$(this).val()){
+            $(this).closest('.input').removeClass('active');
+            $(this).closest('.input').find('.top-border-right').width('calc(100% - 8px)')
+        }
+    });
 });

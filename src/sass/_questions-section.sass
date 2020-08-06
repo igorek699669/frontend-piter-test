@@ -1,0 +1,76 @@
+.questions-section
+  padding-top: 72px
+  padding-bottom: 112px
+  background: url("../img/questions-section/questions-back.png") , linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), #5101A6
+  .header-text
+    font-size: 32px
+    color: #ffffff
+    margin-bottom: 32px
+  .subheader-text
+    max-width: 545px
+    margin: 0 auto
+    margin-bottom: 48px
+.form-wrapper
+  form
+    display: flex
+    justify-content: space-between
+.input
+  border-bottom: 1px solid #FFFFFF
+  border-left: 1px solid #FFFFFF
+  border-right: 1px solid #FFFFFF
+  max-width: 256px
+  width: 100%
+  height: 72px
+  border-radius: 6px
+  position: relative
+  box-sizing: border-box
+  &.active
+    border-bottom: 1px solid #BB6BD9
+    border-left: 1px solid #BB6BD9
+    border-right: 1px solid #BB6BD9
+    label
+      top: 0
+      transform: none
+      font-size: 12px
+      color: #ffffff
+      transform: translateY(-50%)
+    .top-border-left
+      border-top: 1px solid #BB6BD9
+    .top-border-right
+      border-top: 1px solid #BB6BD9
+  .top-border-left
+    height: 10px
+    width: 10px
+    position: absolute
+    border-radius: 6px 0px 0px 0px
+    border-top: 1px solid #ffffff
+    top: 0
+    left: -1px
+  .top-border-right
+    height: 10px
+    position: absolute
+    width: calc(100% - 8px)
+    border-top: 1px solid #ffffff
+    border-radius: 0px 6px 0px 0px
+    top: 0
+    right: -1px
+    transition: 0.5s ease
+  input
+    background-color: transparent
+    border: none
+    position: absolute
+    left: 24px
+    top: 50%
+    transform: translateY(-50%)
+    color: #BB6BD9
+    font-size: 16px
+    font-weight: 700
+  label
+    position: absolute
+    left: 24px
+    top: 50%
+    transform: translateY(-50%)
+    font-size: 16px
+    color: #ffffff
+    font-weight: 700
+    transition: .4s ease

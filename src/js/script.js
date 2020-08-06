@@ -6,8 +6,8 @@ $(document).ready(function () {
            $('.offers-slider').eq($(this).index()).addClass('active');
            $('.tab-buttons-wrapper__button').removeClass('active');
            $(this).addClass('active');
-           refreshSliders();
            changeArrowsClass();
+           refreshSliders();
        }
 
 
@@ -22,11 +22,17 @@ $(document).ready(function () {
             $('.offer-slider-buttons-wrapper__button').addClass('fire-offers');
         }
     }
-    function refreshSliders(){
-        $('.offers-slider.fire-offers').slick('setPosition');
-        $('.offers-slider.all-offers').slick('setPosition');
 
+    function refreshSliders(){
+        //почему то обновляет стрелки слайдера не с 1го раза
+        $('.offers-slider.fire-offers').slick('refresh');
+        $('.offers-slider.all-offers').slick('refresh');
+        setTimeout(function () {
+            $('.offers-slider.fire-offers').slick('refresh');
+            $('.offers-slider.all-offers').slick('refresh');
+        }, 50);
     }
+
     $('.offers-slider.fire-offers').slick({
         slidesToShow: 4,
         slidesToScroll: 1,

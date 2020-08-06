@@ -65,4 +65,5 @@ $(document).ready(function () {
             $(this).closest('.input').find('.top-border-right').width('calc(100% - 8px)')
         }
     });
+
 });

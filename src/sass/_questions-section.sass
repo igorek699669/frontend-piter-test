@@ -13,6 +13,8 @@
     font-family: 'Roboto' , sans-serif
     max-width: 256px
     width: 100%
+    @media(max-width: 991px)
+      max-width: 170px
   .header-text
     font-size: 32px
     color: #ffffff
@@ -25,6 +27,23 @@
   form
     display: flex
     justify-content: space-between
+    @media(max-width: 767px)
+      flex-wrap: wrap
+  .btn
+    @media(max-width: 767px)
+      flex: 0 0 48%
+      max-width: 48%
+    @media(max-width: 564px)
+      flex: 0 0 100%
+      max-width: 100%
+  .input
+    @media(max-width: 767px)
+      flex: 0 0 48%
+      max-width: 48%
+      margin-bottom: 20px
+    @media(max-width: 564px)
+      flex: 0 0 100%
+      max-width: 100%
 .input
   border-bottom: 1px solid #FFFFFF
   border-left: 1px solid #FFFFFF
@@ -36,6 +55,10 @@
   position: relative
   box-sizing: border-box
   cursor: text
+  @media(max-width: 1239px)
+    max-width: 210px
+  @media(max-width: 991px)
+    max-width: 170px
   &.active
     border-bottom: 1px solid #BB6BD9
     border-left: 1px solid #BB6BD9

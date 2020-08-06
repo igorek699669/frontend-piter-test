@@ -6,21 +6,35 @@
     position: relative
     padding-top: 198px
     padding-bottom: 198px
+    @media(max-width: 564px)
+      padding-top: 120px
+      padding-bottom: 120px
     .moon-image
       position: absolute
       right: -32px
       bottom: -112px
+      @media(max-width: 1239px)
+        right: -135px
+      @media(max-width: 991px)
+        display: none
       &__moon
         position: absolute
         left: 50%
         top: 50%
         transform: translate(-50%, -43%)
+        @media(max-width: 1239px)
+          width: 400px
   .head-text
     margin-bottom: 48px
+
+
   .subheader-text
     text-align: left
     max-width: 570px
     margin-bottom: 48px
+    @media(max-width: 564px)
+      font-size: 14px
+      margin-bottom: 24px
 .play-video
   width: 48px
   height: 48px
@@ -35,3 +49,6 @@
   font-weight: bold
   font-size: 48px
   line-height: 56px
+  @media(max-width: 564px)
+    font-size: 28px
+    line-height: 36px

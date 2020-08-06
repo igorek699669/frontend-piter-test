@@ -1,12 +1,21 @@
 .offers-section
   padding-top: 168px
   padding-bottom: 96px
+  @media(max-width: 767px)
+    padding-top: 100px
+    padding-bottom: 70px
   .header-text
     margin-bottom: 76px
+    @media(max-width: 767px)
+      margin-bottom: 36px
   .slick-slide
     margin: 0 32px
+    @media(max-width: 991px)
+      margin: 0 16px
   .slick-list
     margin: 0 -32px
+    @media(max-width: 991px)
+      margin: 0 -16px
 .offers-slider
   display: none !important
   &.active
@@ -26,6 +35,12 @@
     border-bottom: 2px solid transparent
     margin-right: 48px
     cursor: pointer
+    @media(max-width: 564px)
+      display: block
+      margin-bottom: 15px
+      font-size: 12px
+      &:last-child
+        margin-bottom: 0
     &:last-child
       margin-right: 0
     &.active
@@ -45,6 +60,13 @@
     &:last-child
       margin-right: 0
 .offers-item
+  @media(max-width: 564px)
+    text-align: center
+  .image
+    img
+      max-width: 100%
+      @media(max-width: 564px)
+        margin: 0 auto
   &__head-text
     font-size: 14px
     font-family: 'Montserrat' ,sans-serif
@@ -56,6 +78,9 @@
     font-size: 13px
     margin-top: 8px
     max-width: 256px
+    @media(max-width: 564px)
+      margin: 0 auto
+      margin-top: 8px
 .slick-dots
   padding-left: 0
   margin: 0

@@ -39,6 +39,21 @@ $(document).ready(function () {
         dots: true,
         prevArrow: '.offer-slider-buttons-wrapper__button.left.fire-offers',
         nextArrow: '.offer-slider-buttons-wrapper__button.right.fire-offers',
+        responsive: [
+            {
+                breakpoint: 767,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1
+                }
+            },{
+                breakpoint: 564,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+        ]
     });
     $('.offers-slider.all-offers').slick({
         slidesToShow: 4,
@@ -46,6 +61,21 @@ $(document).ready(function () {
         dots: true,
         prevArrow: '.offer-slider-buttons-wrapper__button.left.all-offers',
         nextArrow: '.offer-slider-buttons-wrapper__button.right.all-offers',
+        responsive: [
+            {
+                breakpoint: 767,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1
+                }
+            },{
+                breakpoint: 564,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+        ]
     });
 
 
